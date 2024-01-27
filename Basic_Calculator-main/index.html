@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <script>
+    
+  //global variable to be used in all functions
+  var equation =0;
+  
+  
+  //add values from the buttons 
+  function numbers(n) {
+  equation = document.getElementById("pp").innerHTML += n;
+}
+
+
+ // calcualte by eval function 
+   function evaluation(){
+     
+    try {
+        var Result = document.getElementById("p").innerHTML = 'Result = ' + eval(equation);
+    }
+    
+  catch(err) {
+      document.getElementById("p").innerHTML = err.message;
+      
+      alert('Error has been found ');
+}
+
+  }
+ 
+ 
+ //reset by pressing on C button 
+ function reset(){
+   
+  document.getElementById("pp").innerHTML = n = null;
+ }
+    
+  </script>
+  
+  
+  <body>
+   
+   <div class = "calculator">
+     
+     <h1 style = "text-align: center;"> Basic calculator </h1>
+     <p id="pp" style = "text-align: center;" > </p>
+     <p id="p" style = "text-align: center;" ></p>
+     
+     
+     
+     <div class = "numbers">
+       
+      
+     <button type="button" onclick="numbers('*')" id="myBtn1" value="*">*</button>
+     <button type="button" onclick="numbers('/')" id="myBtn1" value="/">/</button>
+     <button type="button" onclick="numbers('-')" id="myBtn1" value="-">-</button>
+     <button type="button" onclick="numbers('+')" id="myBtn1" value="+">+</button> 
+       
+     <button type="button" onclick="numbers('.')" id="myBtn" value=".">.</button> 
+     <button type="button" onclick="numbers(9)" id="myBtn" >9</button>
+     <button type="button" onclick="numbers(8)" id="myBtn" >8</button>
+     <button type="button" onclick="numbers(7)" id="myBtn" >7</button>
+     <button type="button" onclick="numbers(6)" id="myBtn" >6</button>
+     <button type="button" onclick="numbers(5)" id="myBtn" >5</button>
+     <button type="button" onclick="numbers(4)" id="myBtn" >4</button>
+     <button type="button" onclick="numbers(3)" id="myBtn" >3</button>
+     <button type="button" onclick="numbers(2)" id="myBtn" >2</button>
+     <button type="button" onclick="numbers(1)" id="myBtn" >1</button>
+     <button type="button" onclick="numbers(0)" id="myBtn" >0</button>
+     <button type="button" onclick="evaluation()" id="equal" >=</button>
+     <button type="button" onclick="reset()" id="c" >C</button>
+     
+     
+     </div>
+     
+
+
+     
+   </div>
+  
+  </body>
+</html>

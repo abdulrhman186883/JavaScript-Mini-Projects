@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
+  </head>
+  
+  <script>
+  
+  //reset after 5 second 
+
+  
+  //add values from the bill
+  
+  var bills = 0;
+  var peoples = 0;
+    
+  function bill() {
+  bills = document.getElementById('bill');
+  
+  if (bills.value == 0) {
+    alert('add bills');
+  }
+  
+  
+}
+    
+    
+  function people() {
+  peoples = document.getElementById('people');
+  
+  if (peoples.value == '') {
+    alert('add people');
+  }
+  
+
+}    
+
+
+
+
+
+function services(){
+  var service = document.getElementById('service')
+  document.getElementById("output3").innerHTML = service.value ;
+}
+
+function calculate_bill(){
+  
+   
+  
+  if (bills.value != 0 && peoples.value > 0){
+  document.getElementById("table_view").style.display  = 'block';
+  document.getElementById("output1").innerHTML = peoples.value ;
+  document.getElementById("output2").innerHTML = Math.round(bills.value /peoples.value) ;
+  }
+  
+  else {
+    document.getElementById("output1").innerHTML = "bill  or number of user equal to zero !" ;
+  }
+}
+
+setInterval(
+ function reset(){
+  document.getElementById("table_view").style.display  = 'none';
+ },5000);
+
+    
+  </script>
+  
+  
+  <body>
+    <div class = title>
+       
+          <h1> Tip calculator </h1> 
+      
+      </div>
+      
+      
+   <div class =" container">
+     
+    
+      
+      <div class = "instraction" style="">
+        
+        <p>Bill amount cannot be Blank !</p>
+        <p> number of users must be more than zero</p>
+        <p>you must select a service</p>
+      </div>
+      
+      
+    <div class="info">
+      <p> how much was your bill ? </p>
+      <input size = "10" id="bill"> </input>
+      
+      <p>how many people sharing the bill ? </p>
+      <input size = "10" id= "people"> </input>
+    
+      
+      
+      <p> how was your service</p>
+      <select name="service" id="service">
+  <option value="Excellent">Excellent</option>
+  <option value="Very Good">Very Good</option>
+  <option value="Good">Good</option>
+  <option value="fair">Fair</option>
+</select>
+    </div>
+     <button style = 'margin : 1%;' onclick="bill() ; people() ; calculate_bill() ; services()"> Submit</button>
+   
+   
+   
+   
+   
+   
+   <table id="table_view">
+  <tr>
+    <th>number of people sharing</th>
+    <th>bill for each</th>
+    <th>your services rate </th>
+    
+  </tr>
+  <tr>
+    <td id = "output1" >Alfreds Futterkiste</td>
+    <td id = "output2" >Maria Anders</td>
+    <td id = "output3" >Germany</td>
+  </tr>
+  </table>
+  </div>
+  </body>
+</html>

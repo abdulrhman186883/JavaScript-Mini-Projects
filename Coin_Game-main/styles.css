@@ -1,0 +1,40 @@
+
+body{
+  padding: 25px;
+}
+.title {
+	color: white;
+	text-align: center;
+	background-color: #5C6AC4;
+	padding: 1px;
+	border-radius: 15px;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+.result {
+
+
+display : flex;
+justify-content: center;
+
+}
+
+.result p{
+
+margin : 3%;
+}
+
+
+.Select {
+display: block;
+text-align: center;
+margin : 4%;
+}
+
+.Select p {
+font-weight: 700;
+}

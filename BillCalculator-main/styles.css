@@ -1,0 +1,56 @@
+
+body{
+  padding: 25px;
+}
+.title {
+	color: white;
+	text-align: center;
+	background-color: #5C6AC4;
+	padding: 1px;
+	border-radius: 15px;
+}
+
+.instraction {
+text-align: center;
+background-color : pink;
+margin: auto;
+width: 90%;
+border-radius: 10px;
+
+
+
+}
+
+
+.instraction p{
+ padding : 10px;
+ color : #ff6961;
+}
+
+
+
+#table_view{
+display:none;
+}
+
+
+table {
+  
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.container {
+text-align: center;	
+}

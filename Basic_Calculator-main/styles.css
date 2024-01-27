@@ -1,0 +1,31 @@
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+
+.numbers { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%/3, max(64px, 100%/4)), 1fr));
+
+}
+
+
+#myBtn1{
+background-color: orange;
+
+}
+
+#equal {
+ background-color : green;
+}
+
+#c {
+background-color : red
+}
+
+.numbers{
+max-width: 30%;
+margin: 0 auto;
+}

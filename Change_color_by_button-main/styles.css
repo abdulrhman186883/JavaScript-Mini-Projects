@@ -1,0 +1,113 @@
+
+
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  font-family: inherit;
+}
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.counter_conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  margin-top: 1rem;
+}
+span {
+  font-size: 3rem;
+  background-color: #00bb00;
+  padding: 2px 12px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 4px;
+  color: #fff;
+}
+button {
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px;
+}
+</style>
+
+  <body>
+    
+  <div>
+    
+       <div id = "pp" class = "position">
+  <p> click on the button to random the color <p>
+  </div>
+  
+  
+  <div class = "button" >
+    
+      <button onclick="color()">Click me</button>
+     
+ 
+    </div>
+       
+  </div>
+  
+  
+  </body>
+  
+  
+css 
+
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+
+
+
+ .position p{
+      text-align: center;
+      margin: 0 auto;
+      width : 50%;
+       
+      
+    }
+    
+    .position {
+     padding: 5%;
+     background: grey;
+     width : 50%;
+     margin: 0 auto;
+      margin-top: 20%;
+    }
+    
+    
+    
+
+.button button{
+    
+    margin: 0 auto;
+    margin-top: 5%;
+    display: block;
+    color : purple;
+    border-radius: 7px;
+      
+}
+
+.button button:hover{
+
+color : black;
+}
